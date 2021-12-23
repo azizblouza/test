@@ -4,11 +4,12 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
-import java.time.LocalDate;
+//import java.time.LocalDate;
+/*
 @Entity
-@Table(name = "Commande")
-public class Commande {
-    @Id
+@Table(name = "Commande")*/
+public class Commande {}
+ /*   @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id_Commande;
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
@@ -72,4 +73,4 @@ public class Commande {
         this.quantite = quantite;
         this.prix_Total = prix_Total;
     }
-}
+}*/

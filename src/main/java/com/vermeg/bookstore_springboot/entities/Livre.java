@@ -1,5 +1,9 @@
 package com.vermeg.bookstore_springboot.entities;
 
+
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 
@@ -20,6 +24,10 @@ public class Livre {
     private String img;
     @Column(name = "Stock")
     private int Stock;
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "id_categorie", nullable = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    private Categorie Categorie;
 
     public int getId() {
         return id;
@@ -47,6 +55,14 @@ public class Livre {
 
     public double getPrix() {
         return prix;
+    }
+
+    public com.vermeg.bookstore_springboot.entities.Categorie getCategorie() {
+        return Categorie;
+    }
+
+    public void setCategorie(com.vermeg.bookstore_springboot.entities.Categorie categorie) {
+        Categorie = categorie;
     }
 
     public void setPrix(double prix) {

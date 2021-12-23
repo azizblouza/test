@@ -1,11 +1,10 @@
 package com.vermeg.bookstore_springboot.entities;
 
 import javax.persistence.*;
-import java.util.List;
-
-@Entity
-public class Client {
-    @Id
+//import java.util.List;
+//@Entity
+public class Client {}
+   /* @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id_client;
     @Column(name = "nom")
@@ -121,5 +120,5 @@ public class Client {
         this.adresse = adresse;
         this.tel = tel;
         this.password = password;
-    }
-}
+    }*/
+

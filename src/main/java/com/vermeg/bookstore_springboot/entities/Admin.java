@@ -1,12 +1,12 @@
 package com.vermeg.bookstore_springboot.entities;
-
+/*
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 
-@Entity
-public class Admin {
-    @Id
+@Entity*/
+public class Admin {}
+   /* @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id_admin;
     @Column(name = "nom")
@@ -102,3 +102,4 @@ public class Admin {
     public Admin() {
     }
 }
+*/

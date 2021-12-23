@@ -10,7 +10,7 @@ import com.vermeg.bookstore_springboot.repository.RoleRepository;
 import com.vermeg.bookstore_springboot.repository.UserRepository;
 
 import java.util.Arrays;
-import java.util.HashSet;
+import java.util.HashSet;/*
 @Service("userService")
 public class UserService {
     private UserRepository userRepository;
@@ -37,3 +37,4 @@ public class UserService {
         userRepository.save(user);
     }
 }
+*/
